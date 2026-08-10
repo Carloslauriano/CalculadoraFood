@@ -4,7 +4,7 @@
 
 O CalculadoraFood é uma página estática (HTML/CSS/JS puro, sem backend, sem servidor, sem
 banco de dados). Todo o processamento acontece no navegador do usuário e o único dado
-persistido é salvo em `localStorage`, no próprio navegador — nada é enviado para nenhum
+persistido é salvo em `localStorage`, no próprio navegador - nada é enviado para nenhum
 servidor. Isso limita bastante a superfície de ataque em comparação com uma aplicação com
 backend, mas ainda vale reportar problemas como:
 
@@ -27,5 +27,5 @@ gravidade do problema.
 
 ## Versões suportadas
 
-Não há versões/releases formais — o projeto vive na branch `main`. Correções de segurança
+Não há versões/releases formais - o projeto vive na branch `main`. Correções de segurança
 são aplicadas diretamente nela.

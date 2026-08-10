@@ -1,7 +1,7 @@
 # Contribuindo com o CalculadoraFood
 
-Obrigado pelo interesse em contribuir! Este é um projeto simples — HTML/CSS/JS puro, sem
-build, sem dependências — e a ideia é manter assim.
+Obrigado pelo interesse em contribuir! Este é um projeto simples - HTML/CSS/JS puro, sem
+build, sem dependências - e a ideia é manter assim.
 
 ## Antes de começar
 
@@ -26,7 +26,7 @@ Ou simplesmente abra o `index.html` direto no navegador.
    (ex.: campos vazios, canal sem taxa, exportação com zero produtos).
 4. Se a alteração envolver exportação para XLSX, verifique o arquivo gerado com
    `unzip -t` (integridade do ZIP) e `python3 -c "import xml.dom.minidom, zipfile; ..."`
-   para confirmar que cada parte XML é bem formada — veja o `CLAUDE.md` para o processo
+   para confirmar que cada parte XML é bem formada - veja o `CLAUDE.md` para o processo
    completo, já que não há teste automatizado para isso.
 
 ## Alterando o catálogo de canais (`SUPPORTED_CHANNELS`)
@@ -39,7 +39,7 @@ catálogo, crie o doc dele em `channels/` também, com fonte e nível de confian
 
 ## Enviando um Pull Request
 
-- Descreva o que mudou e por quê (o "porquê" importa mais que o "o quê" — o diff já mostra
+- Descreva o que mudou e por quê (o "porquê" importa mais que o "o quê" - o diff já mostra
   o quê).
 - Mantenha o PR focado em uma única mudança lógica. PRs pequenos são mais fáceis de revisar.
 - Não é necessário abrir uma issue antes de um PR pequeno, mas para mudanças maiores

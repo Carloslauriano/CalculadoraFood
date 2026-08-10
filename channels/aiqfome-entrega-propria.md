@@ -1,8 +1,8 @@
 # Aiqfome Entrega Própria
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `aiqfome-entrega-propria`
-- **Taxa de plataforma**: 14,99% (taxa única — não há taxa de pagamento separada)
-- **Mensalidade**: R$ 89,90 — isenta para faturamento de até R$ 1.500,00/mês
+- **Taxa de plataforma**: 14,99% (taxa única - não há taxa de pagamento separada)
+- **Mensalidade**: R$ 89,90 - isenta para faturamento de até R$ 1.500,00/mês
 - **Entrega**: feita pela própria loja
 
 ## Fonte
@@ -17,4 +17,4 @@ Informado pelo usuário a partir do painel de parceiros Aiqfome, em 2026-08:
 ## Status
 
 Valores atuais no catálogo do app batem com este documento. Sujeito a negociação comercial
-local — confirme no painel de parceiros Aiqfome antes de decisões de precificação.
+local - confirme no painel de parceiros Aiqfome antes de decisões de precificação.
