@@ -33,4 +33,9 @@ individualmente em [`channels/`](./channels). Os dois devem sempre estar sincron
 ## Para desenvolvedores
 
 Consulte [`CLAUDE.md`](./CLAUDE.md) para arquitetura, decisões de design e convenções do
-projeto.
+projeto, e [`CONTRIBUTING.md`](./CONTRIBUTING.md) para como contribuir.
+
+## Comunidade
+
+- [Código de Conduta](./.github/CODE_OF_CONDUCT.md)
+- [Política de Segurança](./SECURITY.md)
