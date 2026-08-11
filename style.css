@@ -35,6 +35,27 @@ body {
   font-size: 0.95rem;
 }
 
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-github-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+}
+
+.header-github-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 .btn-clear {
   background: #fff;
   color: #ea1d2c;

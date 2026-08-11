@@ -39,3 +39,7 @@ projeto, e [`CONTRIBUTING.md`](./CONTRIBUTING.md) para como contribuir.
 
 - [Código de Conduta](./.github/CODE_OF_CONDUCT.md)
 - [Política de Segurança](./SECURITY.md)
+
+Qualquer alteração, bug ou sugestão deve ser aberta como uma
+[Issue](https://github.com/Carloslauriano/CalculadoraFood/issues) antes de qualquer outra
+forma de contato.
