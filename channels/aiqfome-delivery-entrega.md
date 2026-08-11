@@ -1,4 +1,4 @@
-# Aiqfome Delivery + Entrega
+# Aiqfome + Entrega
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `aiqfome-delivery-entrega`
 - **Taxa de plataforma**: 19,99% (taxa única - não há taxa de pagamento separada)

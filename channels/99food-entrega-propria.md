@@ -1,4 +1,4 @@
-# 99Food Entrega Própria
+# 99Food
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `99food-entrega-propria`
 - **Comissão**: 10,9% (**promocional** - padrão é 12%)

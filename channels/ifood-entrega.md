@@ -1,4 +1,4 @@
-# iFood Entrega
+# iFood + Entrega
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `ifood-entrega`
 - **Comissão**: 23% sobre pedidos delivery

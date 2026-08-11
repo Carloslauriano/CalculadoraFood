@@ -1,4 +1,4 @@
-# iFood Básico
+# iFood
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `ifood-basico`
 - **Comissão**: 12% sobre pedidos delivery

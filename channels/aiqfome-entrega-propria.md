@@ -1,4 +1,4 @@
-# Aiqfome Entrega Própria
+# Aiqfome
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `aiqfome-entrega-propria`
 - **Taxa de plataforma**: 14,99% (taxa única - não há taxa de pagamento separada)

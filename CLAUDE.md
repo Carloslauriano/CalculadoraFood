@@ -25,8 +25,9 @@ There is no build, lint, or test command - there is no tooling configured for an
 - `channels/*.md` - one doc per `SUPPORTED_CHANNELS` catalog entry, kept in sync with it (see below).
 - `script.js` - the entire application (IIFE, no modules/bundler):
   - `SUPPORTED_CHANNELS` is a fixed catalog of known food-delivery marketplaces/plans
-    (iFood Básico, iFood Entrega, Aiqfome Entrega Própria, Aiqfome Delivery + Entrega,
-    99Food Entrega pela 99, 99Food Entrega Própria), each with `commission` %, `paymentFee` %
+    (iFood, iFood + Entrega, Aiqfome, Aiqfome + Entrega, 99Food, 99Food + Entrega — the bare
+    name is the self-delivery plan, `<canal> + Entrega` is the plan where the platform
+    delivers), each with `commission` %, `paymentFee` %
     and `monthlyFee` (R$, flat). Nothing here is user-editable - intentional per product
     decision: users pick from this fixed list rather than typing arbitrary channels/rates.
     `getTotalFee(channel)` = `commission + paymentFee`, rounded via `round2()`, is the

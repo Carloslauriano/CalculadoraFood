@@ -1,4 +1,4 @@
-# 99Food Entrega pela 99
+# 99Food + Entrega
 
 - **Id no catálogo** (`SUPPORTED_CHANNELS` em `script.js`): `99food-entrega-99`
 - **Comissão**: 8,9% (**promocional** - padrão é 12%)

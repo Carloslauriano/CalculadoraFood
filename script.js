@@ -10,7 +10,7 @@
   const SUPPORTED_CHANNELS = [
     {
       id: "ifood-basico",
-      name: "iFood Básico",
+      name: "iFood",
       commission: 12,
       paymentFee: 3.2,
       monthlyFee: 110,
@@ -18,7 +18,7 @@
     },
     {
       id: "ifood-entrega",
-      name: "iFood Entrega",
+      name: "iFood + Entrega",
       commission: 23,
       paymentFee: 3.2,
       monthlyFee: 150,
@@ -26,7 +26,7 @@
     },
     {
       id: "aiqfome-entrega-propria",
-      name: "Aiqfome Entrega Própria",
+      name: "Aiqfome",
       commission: 14.99,
       paymentFee: 0,
       monthlyFee: 89.9,
@@ -34,7 +34,7 @@
     },
     {
       id: "aiqfome-delivery-entrega",
-      name: "Aiqfome Delivery + Entrega",
+      name: "Aiqfome + Entrega",
       commission: 19.99,
       paymentFee: 0,
       monthlyFee: 89.9,
@@ -44,17 +44,17 @@
     // struck through against a standard 12% / R$150 / 1.59% saque semanal) —
     // see channels/99food-*.md for the original values this can revert to.
     {
-      id: "99food-entrega-99",
-      name: "99Food Entrega pela 99",
-      commission: 8.9,
+      id: "99food-entrega-propria",
+      name: "99Food",
+      commission: 10.9,
       paymentFee: 3.2,
       monthlyFee: 0,
       monthlyFeeNote: "promocional grátis (padrão R$ 150,00/mês) — taxa de saque semanal também promocional (0%, padrão 1,59%)",
     },
     {
-      id: "99food-entrega-propria",
-      name: "99Food Entrega Própria",
-      commission: 10.9,
+      id: "99food-entrega-99",
+      name: "99Food + Entrega",
+      commission: 8.9,
       paymentFee: 3.2,
       monthlyFee: 0,
       monthlyFeeNote: "promocional grátis (padrão R$ 150,00/mês) — taxa de saque semanal também promocional (0%, padrão 1,59%)",
@@ -210,8 +210,9 @@
       const removeBtn = document.createElement("button");
       removeBtn.type = "button";
       removeBtn.className = "remove-channel";
-      removeBtn.textContent = "×";
+      removeBtn.innerHTML = '<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg>';
       removeBtn.title = "Remover canal";
+      removeBtn.setAttribute("aria-label", "Remover canal");
       removeBtn.addEventListener("click", () => {
         state.channelIds = state.channelIds.filter((id) => id !== channel.id);
         pickerOpen = false;
@@ -238,7 +239,8 @@
     const available = getAvailableChannels();
 
     addBtn.disabled = available.length === 0;
-    addBtn.textContent = available.length === 0 ? "Todos os canais adicionados" : "+ Adicionar canal";
+    const addBtnIcon = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke-linecap="round"/></svg>';
+    addBtn.innerHTML = `${addBtnIcon}${available.length === 0 ? "Todos os canais adicionados" : "Adicionar canal"}`;
 
     picker.innerHTML = "";
     if (!pickerOpen || available.length === 0) {
@@ -315,6 +317,17 @@
     headerRow.appendChild(thActions);
 
     body.innerHTML = "";
+
+    if (state.products.length === 0) {
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.className = "empty-table-message";
+      td.colSpan = 4 + activeChannels.length;
+      td.textContent = 'Nenhum produto adicionado ainda. Clique em "+ Adicionar produto" para começar.';
+      tr.appendChild(td);
+      body.appendChild(tr);
+    }
+
     state.products.forEach((product) => {
       const tr = document.createElement("tr");
 
@@ -367,8 +380,9 @@
       const removeBtn = document.createElement("button");
       removeBtn.type = "button";
       removeBtn.className = "remove-product";
-      removeBtn.textContent = "×";
+      removeBtn.innerHTML = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2.5 4h11M6 4V2.5h4V4M3.5 4l.6 9a1 1 0 001 .9h5.8a1 1 0 001-.9l.6-9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
       removeBtn.title = "Remover produto";
+      removeBtn.setAttribute("aria-label", "Remover produto");
       removeBtn.addEventListener("click", () => {
         state.products = state.products.filter((p) => p.id !== product.id);
         render();
