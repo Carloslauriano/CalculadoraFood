@@ -15,7 +15,7 @@ body {
 }
 
 .app-header {
-  background: #ea1d2c;
+  background: #3b1f5c;
   color: #fff;
   padding: 24px 32px;
   display: flex;
@@ -43,29 +43,32 @@ body {
 }
 
 .header-github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 8px 14px;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
+  border-radius: 50%;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .header-github-link:hover {
   background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.06);
 }
 
 .btn-clear {
   background: #fff;
-  color: #ea1d2c;
+  color: #3b1f5c;
   font-weight: 600;
   flex-shrink: 0;
   border: 1px solid #fff;
 }
 
 .btn-clear:hover {
-  background: #ffe5e5;
+  background: #ece5f3;
 }
 
 main {
